@@ -1,6 +1,6 @@
-package Lesson3.P1_PingPong;
+package Lesson3.P2_Counter;
 
-public class main {
+public class Counter {
     public static void main(String[] args) {
 
     }
