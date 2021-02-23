@@ -1,1 +1,31 @@
- 
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="header(title)">
+    <meta charset="UTF-8">
+    <title th:replace="${title}">Tit2le</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/main.css}">
+</head>
+<body>
+
+<div>
+    <div class="logo"><img src="/static/img/bug-small.png" /></div>
+    <h1> Head </h1>
+</div>
+<div style="clear: both;"></div>
+
+<ul id="top-menu">
+    <li><a href="/">Home</a></li>
+    <li><a href="/product/list">List products</a></li>
+    <li><a href="/product/add">Add product</a></li>
+    <li><a href="/clients">Clients list</a></li>
+</ul>
+
+<div th:insert="~{fragments/head}">Head</div>
+<div th:insert="~{fragments/menu :: #top-menu}">Top menu</div>
+
+<div th:text="${testtext}">wqer</div>
+
+<h3>Add client</h3>
+
+</body>
+</html>
