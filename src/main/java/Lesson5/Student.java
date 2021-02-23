@@ -1,9 +1,5 @@
 package Lesson5;
 
-/* Александр, добрый день!
-Признаюсь честно - скоммуниздил, ничего не успеваю.
- */
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
